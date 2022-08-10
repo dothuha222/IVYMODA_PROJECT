@@ -1,0 +1,90 @@
+
+.product__title{
+    margin: 120px 0 80px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.product__title > h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Box */
+
+.box{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product__card{
+    user-select: none;
+    margin-bottom: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.product__card-img img{
+    width: 100%;
+    /* transition: all 0.5s linear;
+    opacity: 1;
+    visibility: visible; */
+}
+
+/* .product__card-img img.visuallyhidden{
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.product__card-info{
+    padding: 22px 10px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.product__card-color {
+    margin-bottom: 4px;
+}
+
+.btn-flat{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: relative;
+}
+
+.btn-flat.checked::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    top: 3px;
+    left: 6px;
+}
+
+.btn-flat.checked{
+    top: -10px;
+}
+
+.product__cart-name{
+    margin-bottom: 4px;
+}
+
+.product__cart-name > span{
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.product__card-price > .current__price{
+    font-size: 21px;
+    margin-right: 4px;
+}
+
+.product__card-price > .old__price{
+    color: var(--old-color);
+}
+

@@ -1,0 +1,377 @@
+.content__container{
+    margin-top: 80px;
+    font-family: Montserrat,sans-serif;
+    user-select: none;
+}
+
+.content__wrap{
+    width:90%;
+    margin: 0 auto;
+}
+
+.content__wrap > .address > a{
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.content__wrap > .address > a:nth-child(1){
+    width: 88px;
+}
+
+.content__wrap > .address > span{
+    margin: 0 14px 0 10px;
+}
+
+.content__wrap > .address > a:hover{
+    font-weight: 500;
+}
+/* Common */
+.common{
+    margin-top: 56px;
+    text-align: center;
+}
+
+.common > .title > h1{
+    font-size: 80px;
+    line-height:98px;
+    font-weight: 700;
+}
+
+.common > .navigation{
+    width: 48%;
+    margin: 26px auto;
+    font-size:20px;
+}
+
+.navigation-list{
+    display:flex;
+    justify-content:space-around;
+}
+
+.navigation-item{
+    padding-bottom:4px ;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.navigation-item:hover{
+    color:#995437;
+}
+
+.navigation-item.nav-border{
+    border-bottom: 2px solid #000;
+}
+
+/* Tab item */
+.tab__item{
+    margin-top: 40px;
+}
+
+/* Tab item 1: Tin tức */
+
+/* Tab story */
+.tab__story{
+    display: flex;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+    border: 1px solid #E7E8E9;
+    margin-bottom: 70px;
+}
+
+/* tab story text */
+
+.tab__story--text{
+    width: 50%;
+    flex-shrink: 0;
+    padding: 34px;
+}
+
+.tab__story--text > p:nth-child(1){
+    text-align: center;
+    font-size: 22px;
+    color: #6b6c70;
+}
+
+.tab__story--text > h2{
+    font-size: 38px;
+}
+
+.tab__story--text > p:nth-child(3){
+    margin-top: 24px;
+    color: var(--title-color);
+    line-height: 31px;
+}
+
+.tab__story--text > span{
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.tab__story--text > span:nth-child(4){
+    display: block;
+    margin-top: 37px;
+}
+
+.tab__story--text > span:nth-child(5){
+    margin-top: 100px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.tab__story--text.tab__story--text-even {
+    text-align: center;
+}
+
+/* tab story img */
+
+.tab__story--image > img {
+    width: 100%;
+}
+
+/* Tab mordern trending*/
+.tab__mordern-trending > h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+
+/* Tab news */
+.tab__news{
+    margin-top: 68px;
+}
+
+.tab__news > h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.tab__news-item{
+    cursor: pointer;
+}
+
+.tab__news-img > img{
+    width: 100%;
+}
+
+.tab__news-text > p{
+    font-size: 15px;
+}
+
+.tab__news-text > p:nth-child(1){
+    margin-top: 30px;
+    color: var(--title-color);
+    height: 116px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.tab__news-text > p:nth-child(2){
+    font-weight: 600;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.tab__news-text > p:nth-child(3){
+    color: var(--old-color);
+}
+
+/* Tab item 2: Kiến thức */
+.tab__item2 > .tab__story{
+    height: 790px;
+}
+
+.tab__item2 > .tab__story:nth-child(3){
+    height: auto;
+}
+
+.tab__news-img.tab2{
+    height:300px;
+}
+
+.tab__news-img.tab2 > img{
+    width:436px;
+    height:297px;
+}
+
+.tab__news-img.tab2 > img:nth-child(1){
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.tab__news-img.tab2 > img:nth-child(2){
+    opacity: 0;
+    transition: all 0.4s linear;
+    transform: translateY(-100%);
+}
+.tab__news-img.tab2:hover .tab__img1{
+    opacity: 0;
+}
+
+.tab__news-img.tab2:hover .tab__img2{
+    opacity: 1;
+}
+
+/* Tablet and Mobile */
+@media only screen and (max-width: 1024px){
+    .common {
+        margin-top: 20px;
+    }
+
+    .common > .navigation {
+        width: 100%;
+    }
+
+    .color__item,
+    .navigation-item{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width:1024px){
+  
+    .common > .title > h1 {
+        font-size: 48px;
+    }
+
+    .common > .navigation {
+        font-size: 18px;
+    }
+
+   
+
+    .tab__story--text {
+        padding: 34px 20px;
+    }
+
+    .tab__story--text > p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .tab__story--text > h2 {
+        font-size: 28px;
+    }
+
+    .tab__story--text > p:nth-child(3) {
+        font-size: 15px;
+    }
+
+    .tab__story--text > span:nth-child(4) {
+        margin-top: 34px;
+        font-size: 13px;
+    }
+
+    .tab__story--text > span:nth-child(5) {
+        margin-top: 44px;
+        font-size: 14px;
+    }
+
+    .tab__news-item {
+        margin-top: 60px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px){
+
+    .common > .title > h1 {
+        font-size: 38px;
+        line-height: 74px;
+    }
+
+    .common > .navigation {
+        font-size: 12px;
+    }
+
+    /* Story */
+
+    .tab__story {
+        display: flex;
+        flex-direction: column-reverse;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-bottom: 70px;
+    }
+
+    .tab__story--text {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .tab__story--text > p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .tab__story--text > h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .tab__story--text > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .tab__story--text > span {
+        color: var(--title-color);
+        font-size: 12px;
+    }
+
+    .tab__story--text > span:nth-child(5) {
+        margin-top: 36px;
+        margin-bottom: 20px;
+    }
+
+    .tab__mordern-trending > h2 {
+        font-size: 20px;
+        margin-bottom: -30px;
+    }
+
+    p.card-text {
+        margin-top: 20px;
+    }
+
+    .buy__now {
+        margin-top: 42px;
+    }
+
+    .buy__now > span {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    /* News */
+    .tab__news{
+        margin-top: 30px;
+    }
+    
+    .tab__news > h1{
+        font-size: 26px;
+    }
+    
+    .tab__news-item{
+        margin-bottom: 40px;
+    }
+
+    .tab__news-text > p:nth-child(2) {
+        height: auto;
+        margin: 20px 0 10px;
+    }
+
+    .tab__news-img.tab2 {
+        height: 260px;
+    }
+
+    .tab__news-img.tab2 > img {
+        width: 100%;
+        height: auto; 
+    }
+}

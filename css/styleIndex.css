@@ -117,6 +117,10 @@ a{
     align-items: center;
 }
 
+.nav__pc-cart > a{
+    color: var(--text-color);
+}
+
 .nav__pc-cart > i:nth-child(2){
     cursor: pointer;
 }
